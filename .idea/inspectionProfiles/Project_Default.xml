@@ -1,0 +1,35 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssInvalidPropertyValue" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="13">
+            <item index="0" class="java.lang.String" itemvalue="pandas" />
+            <item index="1" class="java.lang.String" itemvalue="pyyaml" />
+            <item index="2" class="java.lang.String" itemvalue="scipy" />
+            <item index="3" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="4" class="java.lang.String" itemvalue="pillow" />
+            <item index="5" class="java.lang.String" itemvalue="torch" />
+            <item index="6" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="7" class="java.lang.String" itemvalue="torchvision" />
+            <item index="8" class="java.lang.String" itemvalue="opencv-python-headless" />
+            <item index="9" class="java.lang.String" itemvalue="uvloop" />
+            <item index="10" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="11" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="12" class="java.lang.String" itemvalue="typing-extensions" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="yolov5.models.common.utils" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

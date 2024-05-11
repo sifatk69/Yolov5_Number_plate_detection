@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounding Box Data</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bounding Box Data</h1>
+    <table id="boundingBoxTable">
+        <thead>
+            <tr>
+                <th>xmin</th>
+                <th>ymin</th>
+                <th>xmax</th>
+                <th>ymax</th>
+                <th>confidence</th>
+                <th>class</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>902.991516</td>
+                <td>371.934784</td>
+                <td>1051.285034</td>
+                <td>546.859985</td>
+                <td>0.931330</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+            <!-- Add more rows for each entry in your data -->
+            <!-- Replace the values with your actual data -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var table = document.getElementById("boundingBoxTable");
+            var tbody = table.getElementsByTagName("tbody")[0];
+            var rows = tbody.getElementsByTagName("tr");
+
+            // Iterate over each row
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var cells = row.getElementsByTagName("td");
+
+                // Iterate over each cell in the row
+                for (var j = 0; j < cells.length; j++) {
+                    var cell = cells[j];
+                    console.log(cell.innerText); // Access the data in each cell
+                }
+            }
+        });
+    </script>
+</body>
+</html>
